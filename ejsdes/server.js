@@ -23,13 +23,12 @@ app.post('/productos', (req,res) => {
             foto: req.body.urlFoto
         }
     )
-    console.log(req.body)
     res.redirect('/')
     contador = productos[productos.length - 1].id + 1;
 })
 
 app.get('/productos', (req,res) => {
-    res.render('', {productos: productos})
+    res.render('inicio', {productos: productos})
 })
 
 const PORT = 8080;
