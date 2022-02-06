@@ -1,0 +1,16 @@
+extends layouts 
+
+block productos 
+    if productos.length > 0
+        table
+            tr
+                th Nombre
+                th Precio
+                th Foto
+            each val in productos
+                tr
+                    td=val.nombre
+                    td=val.precio 
+                    td: img(src=val.urlFoto)
+    else
+        h2 No hay productos

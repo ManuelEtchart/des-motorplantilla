@@ -9,7 +9,7 @@
         <tr>
             <td>{{this.nombre}}</td>
             <td>{{this.precio}}</td>
-            <td><img src="{{this.foto}}" alt=""></td>
+            <td><img src="{{this.foto}}"></td>
         </tr>
         {{/each}}
     </table>
