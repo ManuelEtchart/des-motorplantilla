@@ -8,10 +8,10 @@ app.use(express.urlencoded({extended: true}));
 const hds = require('express-handlebars');
 
 app.engine('hds', hds.engine({
-    extname: '.hds',
     defaultLayout: 'main',
     layoutsDir: path.join(app.get('views'), 'layouts'),
-    partialsDir: path.join(app.get('views'), 'partials')
+    partialsDir: path.join(app.get('views'), 'partials'),
+    extname: '.hds',
 }))
 
 app.set('view engine', 'hds');
@@ -23,16 +23,13 @@ app.use(express.static('public'));
 let productos = [];
 let contador = 1;
 
-app.get('/', (req,res) => {
-    
-})
-
 app.post('/productos', (req,res) => {
     productos.push(
         {
             id: contador,
             nombre: req.body.nombre,
-            precio: req.body.precio
+            precio: req.body.precio,
+            foto: req.body.urlFoto
         }
     )
     res.redirect('/')
@@ -40,7 +37,7 @@ app.post('/productos', (req,res) => {
 })
 
 app.get('/productos', (req,res) => {
-
+    res.render('plantilla', {productos: productos})
 })
 
 const PORT = 8080;

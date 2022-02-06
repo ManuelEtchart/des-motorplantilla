@@ -7,8 +7,8 @@
     <title>Productos</title>
 </head>
 <body>
-    <h2>Productos</h2>
-    {{{productos}}}
-    <a href='/'>Ingresar producto<a>
+    <h1>Productos</h1>
+    {{{body}}}
+    <a href='/'><button>Ingresar producto</button></a>
 </body>
 </html>
