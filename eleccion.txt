@@ -1,0 +1,7 @@
+Mi elección sería EJS ya que con conocimientos de Javascript y HTML se puede realizar
+tranquilamente la maquetación que uno desea. Solamente habría que aprender la sintaxis
+de este motor de plantillas. Sin embargo, HDS y PUG no son tan distintos a EJS. HDS tambien usa HTML 
+común pero no utiliza Javascript. Usa una sintaxis parecida pero no igual para realizar ciertas 
+funcionalidades la cual habría que aprender, además de aprender su sintaxis para maquetar.
+Y PUG para hacer la maquetación uno tiene que saber HTML si o si y además aprender la sintaxis, 
+tanto para maquetar como para realizar ciertas funcionalidades. Sería mucho más trabajo.

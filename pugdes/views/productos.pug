@@ -10,7 +10,7 @@ block productos
             each val in productos
                 tr
                     td=val.nombre
-                    td=val.precio 
+                    td=`$${val.precio}` 
                     td: img(src=val.foto)
     else
-        h2 No hay productos
+        p.aviso No hay productos

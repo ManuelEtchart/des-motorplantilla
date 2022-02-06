@@ -8,13 +8,13 @@
         {{#each productos}}
         <tr>
             <td>{{this.nombre}}</td>
-            <td>{{this.precio}}</td>
+            <td>${{this.precio}}</td>
             <td><img src="{{this.foto}}"></td>
         </tr>
         {{/each}}
     </table>
 {{else}}
-    <h2>No hay productos</h2>
+    <p class="aviso">No hay productos</p>
 {{/if}}
 
 

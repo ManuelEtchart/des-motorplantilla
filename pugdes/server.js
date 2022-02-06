@@ -24,7 +24,6 @@ app.post('/productos', (req,res) => {
             foto: req.body.urlFoto
         }
     )
-    console.log(req.body)
     res.redirect('/')
     contador = productos[productos.length - 1].id + 1;
 })

@@ -1,4 +1,4 @@
-<h1>Productos</h1>
+<p class="titulo">Productos</h1>
 <% if(productos.length > 0){ %>
     <table>
         <tr>
@@ -9,12 +9,12 @@
         <% for(const producto of productos){ %>
         <tr>
             <td><%=producto.nombre%></td>
-            <td><%=producto.precio%></td>
+            <td>$<%=producto.precio%></td>
             <td><img src=<%=producto.foto%>></td>
         </tr>
         <% } %>
     </table>
 <% }else { %>
-    <h2>No hay productos</h2>
+    <p class="aviso">No hay productos</p>
 <% } %>
 <a href='/'><button>Ingresar producto</button></a>
